@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="50dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="40dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="30dp" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="end"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/guideline1" />
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:textSize="17sp"
+                android:gravity="end"
+                app:layout_constraintRight_toLeftOf="@+id/guideline3"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
+                tools:text="@string/value" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/guideline2"
+                tools:text="@string/description" />
+
+            <TextView
+                android:id="@+id/tv_commercialName"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textSize="17sp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline1"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
+                tools:text="@string/commercialName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

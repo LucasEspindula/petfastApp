@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PetFast</string>
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="login">Login</string>
+    <string name="client">Cliente</string>
+    <string name="petshop">Petshop</string>
+    <string name="create_account">Criar</string>
+    <string name="register_login_page">Não possui conta?</string>
+    <string name="choose_account_type">Criar conta como</string>
+    <string name="username">Nome de usuário</string>
+    <string name="commercialName">Nome comercial</string>
+    <string name="description">Descrição</string>
+    <string name="value">Valor</string>
+    <string name="cpf">CPF</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="city">Cidade</string>
+    <string name="complement">Complemento</string>
+    <string name="district">Bairro</string>
+    <string name="number">Número</string>
+    <string name="road">Rua</string>
+    <string name="state">Estado</string>
+    <string name="zipCode">CEP</string>
+    <string name="telephone">Telefone</string>
+</resources>

@@ -15,7 +15,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField "String", "HTTP_SERVER", "\"https://localhost:8089/petfast/api/\""
+        buildConfigField "String", "HTTP_SERVER", "\"http://192.168.33.172:8089/petfast/api/\""
     }
 
     buildTypes {

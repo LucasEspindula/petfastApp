@@ -9,7 +9,7 @@
     <string name="register_login_page">Não possui conta?</string>
     <string name="choose_account_type">Criar conta como</string>
     <string name="username">Nome de usuário</string>
-    <string name="commercialName">Nome comercial</string>
+    <string name="productName">Nome do produto</string>
     <string name="description">Descrição</string>
     <string name="value">Valor</string>
     <string name="cpf">CPF</string>

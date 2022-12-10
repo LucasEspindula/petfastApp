@@ -1,6 +1,6 @@
 package com.lucas.petfast.model
 
-data class ContactModel (
+data class Contact(
     val email: String,
-    val phone: String
+    val telephone: String
 )

@@ -1,11 +1,11 @@
 package com.lucas.petfast.model
 
-data class AddressModel (
+data class Address(
     val city: String,
     val district: String,
     val number: String,
     val road: String,
     val state: String,
-    val zipcode: String,
+    val zipCode: String,
     val complement: String,
 )

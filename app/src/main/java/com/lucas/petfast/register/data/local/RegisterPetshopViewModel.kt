@@ -24,14 +24,30 @@ class RegisterPetshopViewModel : ViewModel() {
     fun registerPetshop(newPetshopModel: NewPetshopModel) {
         viewModelScope.launch {
             if (newPetshopModel.cnpj.isBlank()) {
-                message.value = "The CNPJ field cannot be empty!"
+                message.value = "CNPJ não pode ser vazio."
+            } else if (newPetshopModel.username.isBlank()) {
+                message.value = "Nome de usuário não pode ser vazio."
+            } else if (newPetshopModel.password.isBlank()) {
+                message.value = "Senha não pode ser vazia."
+            } else if (newPetshopModel.address.city.isBlank()) {
+                message.value = "Cidade não pode ser vazia."
+            } else if (newPetshopModel.address.number.isBlank()) {
+                message.value = "Número de endereço não pode ser vazio."
+            } else if (newPetshopModel.address.road.isBlank()) {
+                message.value = "Nome da rua não pode ser vazia."
+            } else if (newPetshopModel.address.district.isBlank()) {
+                message.value = "Bairro residêncial não pode ser vazio."
+            } else if (newPetshopModel.address.state.isBlank()) {
+                message.value = "Estado residente não pode ser vazio."
+            } else if (newPetshopModel.address.zipCode.isBlank()) {
+                message.value = "CEP não pode ser vazio."
             } else {
                 val newUser = PetshopModel(
                     cnpj = newPetshopModel.cnpj,
                     username = newPetshopModel.username,
                     password = newPetshopModel.password,
-                    contactModel = newPetshopModel.contactModel,
-                    addressModel = newPetshopModel.addressModel
+                    contact = newPetshopModel.contact,
+                    address = newPetshopModel.address
                 )
 
                 userCreated.value = true

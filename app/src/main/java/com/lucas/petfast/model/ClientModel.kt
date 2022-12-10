@@ -1,10 +1,9 @@
 package com.lucas.petfast.model
 
-data class ClientModel (
-    val id: Int = 0,
+data class ClientModel(
     val username: String,
     val password: String,
     val cpf: String,
-    val addressModel: AddressModel,
-    val contactModel: ContactModel
+    val address: Address,
+    val contact: Contact
 )

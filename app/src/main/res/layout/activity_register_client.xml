@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -11,15 +10,18 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/username"
                 android:imeOptions="actionNext"
                 android:inputType="text" />
@@ -27,14 +29,17 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_username" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/password"
                 android:imeOptions="actionNext"
                 android:inputType="text" />
@@ -42,29 +47,35 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_cpf"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_password" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_cpf"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/cpf"
                 android:imeOptions="actionNext"
-                android:inputType="text" />
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_cpf" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/email"
                 android:imeOptions="actionNext"
                 android:inputType="text" />
@@ -72,29 +83,35 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_email" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/telephone"
                 android:imeOptions="actionNext"
-                android:inputType="text" />
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_city"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_phone" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_city"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/city"
                 android:imeOptions="actionNext"
                 android:inputType="text" />
@@ -102,14 +119,17 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_district"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_city" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_district"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/district"
                 android:imeOptions="actionNext"
                 android:inputType="text" />
@@ -117,29 +137,35 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_district" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_number"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/number"
                 android:imeOptions="actionNext"
-                android:inputType="text" />
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_road"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_number" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_road"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/road"
                 android:imeOptions="actionNext"
                 android:inputType="text" />
@@ -147,14 +173,17 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_state"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_road" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_state"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/state"
                 android:imeOptions="actionNext"
                 android:inputType="text" />
@@ -162,29 +191,35 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_zipcode"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_state" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_zipcode"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/zipCode"
                 android:imeOptions="actionNext"
-                android:inputType="text" />
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ti_complement"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ti_zipcode" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_complement"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:hint="@string/complement"
                 android:imeOptions="actionNext"
                 android:inputType="text" />
@@ -192,12 +227,14 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/bt_register"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="50dp"
             android:layout_height="wrap_content"
             android:text="@string/create_account"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ti_complement" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,6 +21,10 @@ class ProductListAdapter : RecyclerView.Adapter<TransactionViewHolder>() {
         holder.bind(item)
     }
 
+    fun addList(list: List<ProductsResponse>) {
+        listItem.addAll(list)
+    }
+
     override fun getItemCount(): Int {
         return listItem.size
     }
@@ -31,7 +35,7 @@ class TransactionViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
 
     fun bind(productsResponse: ProductsResponse) {
-        productsResponse.name.also { binding.tvCommercialName.text = it }
+        productsResponse.name.also { binding.tvProductName.text = it }
         productsResponse.description.also { binding.tvDescription.text = it }
         "R$ ${2.formatsNew(productsResponse.value)}".also { binding.tvValue.text = it }
 

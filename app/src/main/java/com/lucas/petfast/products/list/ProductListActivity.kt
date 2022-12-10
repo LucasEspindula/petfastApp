@@ -3,6 +3,7 @@ package com.lucas.petfast.products.list
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.lucas.petfast.databinding.ActivityProductListBinding
+import com.lucas.petfast.products.remote.ProductsResponse
 
 class ProductListActivity : AppCompatActivity() {
 
@@ -22,8 +23,20 @@ class ProductListActivity : AppCompatActivity() {
         viewModel = ProductListViewModel()
         viewModel.callProducts()
 
-        viewModel.productsLiveData.observe(this) {
-            binding.rcList.adapter = adapterProducts
+        viewModel.productsLiveData.observe(this) { products ->
+            if (products != null && products.isNotEmpty()) {
+                val productsMapper = products.map {
+                    ProductsResponse(
+                        name = it.name,
+                        value = it.value,
+                        description = it.description,
+                        typeProduct = it.typeProduct
+                    )
+                }
+
+                binding.rcList.adapter = adapterProducts
+                adapterProducts.addList(productsMapper)
+            }
         }
     }
 }

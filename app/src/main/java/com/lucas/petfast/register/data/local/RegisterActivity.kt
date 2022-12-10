@@ -3,7 +3,6 @@ package com.lucas.petfast.register.data.local
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.lucas.petfast.databinding.ActivityLoginBinding
 import com.lucas.petfast.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity() {

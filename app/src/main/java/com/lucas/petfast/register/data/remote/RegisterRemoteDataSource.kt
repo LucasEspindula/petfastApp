@@ -38,8 +38,8 @@ class RegisterRemoteDataSource {
             cpf = cpf,
             username = username,
             password = password,
-            contactModel = contactModel,
-            addressModel = addressModel
+            contact = contact,
+            address = address
         )
     }
 
@@ -48,8 +48,8 @@ class RegisterRemoteDataSource {
             cnpj = cnpj,
             username = username,
             password = password,
-            contactModel = contactModel,
-            addressModel = addressModel
+            contact = contact,
+            address = address
         )
     }
 }

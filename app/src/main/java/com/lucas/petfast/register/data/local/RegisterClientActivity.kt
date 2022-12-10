@@ -4,11 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.lucas.petfast.MainActivity
 import com.lucas.petfast.databinding.ActivityRegisterClientBinding
-import com.lucas.petfast.model.AddressModel
-import com.lucas.petfast.model.ContactModel
+import com.lucas.petfast.model.Address
+import com.lucas.petfast.model.Contact
 import com.lucas.petfast.model.NewClientModel
+import com.lucas.petfast.products.list.ProductListActivity
 
 class RegisterClientActivity : AppCompatActivity() {
 
@@ -29,17 +29,17 @@ class RegisterClientActivity : AppCompatActivity() {
                     username = binding.etUsername.text.toString(),
                     password = binding.etPassword.text.toString(),
                     cpf = binding.etCpf.text.toString(),
-                    contactModel = ContactModel(
+                    contact = Contact(
                         email = binding.etEmail.text.toString(),
-                        phone = binding.etPhone.text.toString()
+                        telephone = binding.etPhone.text.toString()
                     ),
-                    addressModel = AddressModel(
+                    address = Address(
                         city = binding.etCity.text.toString(),
                         district = binding.etDistrict.text.toString(),
                         number = binding.etNumber.text.toString(),
                         road = binding.etRoad.text.toString(),
                         state = binding.etState.text.toString(),
-                        zipcode = binding.etZipcode.text.toString(),
+                        zipCode = binding.etZipcode.text.toString(),
                         complement = binding.etComplement.text.toString()
                     )
                 )
@@ -58,9 +58,8 @@ class RegisterClientActivity : AppCompatActivity() {
 
         viewModel.userCreatedLiveData.observe(this) { userCreated ->
             if (userCreated) {
-                Intent(this, MainActivity::class.java).also {
+                Intent(this, ProductListActivity::class.java).also {
                     startActivity(it)
-                    finish()
                 }
             }
         }

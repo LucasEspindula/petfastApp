@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.lucas.petfast.MainActivity
 import com.lucas.petfast.databinding.ActivitySplashBinding
 import com.lucas.petfast.login.LoginActivity
 
